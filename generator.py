@@ -20,14 +20,13 @@ app = Client(
 )
 
 
-# Run Bot
 if __name__ == "__main__":
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
+        raise Exception("عـذرا هنـالك خـطأ في الايب ايدي او الايبي هاش")
     except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
+        raise Exception("عـذرا توكـن البـوت غيـر صالـح")
     uname = app.get_me().username
     print(f"@{uname} Started Successfully!")
     idle()

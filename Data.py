@@ -4,64 +4,52 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
+- مرحبا بك في بوت جمثون
 
-Welcome to {}
+من هذا البوت يمكنك استخراج كود تيرمكس بسهولة وبسرعة و بدون مشاكل اختر امر الاستخراج في الاسفل واكمل العملية  ، 
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
-
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
-
-By @StarkBots
+@JMTHON
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(" • بدء الاستخراج  •", callback_data="generate")],
+        [InlineKeyboardButton(text="• الواجهة الرئيسية •", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("• بدء الاستخراج  •", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("• بدء الاستخراج  •", callback_data="generate")
+            InlineKeyboardButton("• كيفية الاستخدام  •", callback_data="help"),
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
+        [InlineKeyboardButton(" • قناة السورس •", url="https://t.me/JMTHON")],
     ]
 
     # Help Message
-    HELP = """
-✨ **Available Commands** ✨
+    HELP = """ 
+✨ الاوامر المتوفرة التي يمكنك مساعدة استخدام البوت بسلاسة هي : ✨
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about 
+لعـرض معلومـات البـوت
+/help 
+ لعـرض اوامـر البوت
+/start 
+ لتشغـيل البـوت
+/generate 
+لبـدء استخـراج كود تيرمكس
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+بوت استخراج كود تيرمكس 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+وهـو عبـارة عن بوت بسيط للمساعـدة في استخـراج كـود تيرمكس بسهولة وبأمان تام  ومساعدك في عمليه تنصيب سورس جمثون 
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
-
-Framework : [Pyrogram](docs.pyrogram.org)
-
-Language : [Python](www.python.org)
-
-Developer : @StarkProgrammer
-    """
+قناة السورس  : 
+@Jmthon
+>    """
