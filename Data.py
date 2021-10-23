@@ -23,12 +23,14 @@ class Data:
 
     # Rest Buttons
     buttons = [
+        [InlineKeyboardButton("• بدء الاستخراج •", callback_data="generate")],
+        [InlineKeyboardButton("• قناة جمثون •", url="https://t.me/jmthon")],
         [
-            InlineKeyboardButton("• بدء الاستخراج  •", callback_data="generate")],
-            InlineKeyboardButton("• كيفية الاستخدام  •", callback_data="help"),
+            InlineKeyboardButton("• اوامر البوت •", callback_data="help"),
+            InlineKeyboardButton("• حول البوت •", callback_data="about")
         ],
-        [InlineKeyboardButton(" • قناة السورس •", url="https://t.me/JMTHON")],
     ]
+
 
     # Help Message
     HELP = """ 
