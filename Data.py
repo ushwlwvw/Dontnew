@@ -4,11 +4,11 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-- مرحبا بك في بوت جمثون
+- مرحبا بك في بوت الخليفه 
 
 من هذا البوت يمكنك استخراج كود تيرمكس بسهولة وبسرعة و بدون مشاكل اختر امر الاستخراج في الاسفل واكمل العملية  ، 
 
-@JMTHON
+@aaaalqp
     """
 
     # Home Button
@@ -24,7 +24,7 @@ class Data:
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("• بدء الاستخراج •", callback_data="generate")],
-        [InlineKeyboardButton("• قناة جمثون •", url="https://t.me/jmthon")],
+        [InlineKeyboardButton("• قناة الخليفه •", url="https://t.me/aaaalqp")],
         [
             InlineKeyboardButton("• اوامر البوت •", callback_data="help"),
             InlineKeyboardButton("• حول البوت •", callback_data="about")
